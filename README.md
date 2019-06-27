@@ -20,7 +20,7 @@ In the simplest usage, you just need to add the js file and call `run()`, passin
 
 To avoid conflicts with namespaces of other libraries you could using, the code is wrapped in a class and then auto-instance an object called `jsdialog`. Thats why you must call `jsdialog.run()` instead of just `run()`.
 
-NOTE: Your own js script must be placed at the end of `body`, or in `head` wrapping everything in a [`window.onload`](https://developer.mozilla.org/es/docs/Web/API/GlobalEventHandlers/onload) event, but for practiceness, placing it at the end of `body` is recomended. The scritp tag that load `jsdialogs` code must always be placing before your own js code.
+NOTE: Your own js script must be placed at the end of `body`, or in `head` wrapping everything in a [`window.onload`](https://developer.mozilla.org/es/docs/Web/API/GlobalEventHandlers/onload) event ([here](https://stackoverflow.com/questions/21761954/load-external-javascript-file-after-onload) is an example of how load `jsdialogs` code after `window.onload` event), but for practiceness, placing it at the end of `body` is recomended. The scritp tag that load `jsdialogs` code must always be placing before your own js code.
 
 ---
 
