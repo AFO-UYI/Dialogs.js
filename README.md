@@ -3,10 +3,12 @@ A minimal way to add modal dialogs on your web page with vanilla Javascript.
 
 ## Usage
 
+#### Standar version (`jsdialogs.js` and `jsdialogs.min.js`)
+
 In the simplest usage, you just need to add the js file and call `run()`, passing a message or html in text format or a Node Object, if is to ask for confirmation or just a fancy alert, and a callback for the accept case.
 
 ```html
-<script src="jsdialogs.min.js" charset="utf-8"></script>
+<script src="/path_to_folder/jsdialogs.min.js" charset="utf-8"></script>
 <script type="text/javascript">
   let trigger = document.getElementById('something');
   trigger.onclick = function(){
@@ -21,6 +23,19 @@ In the simplest usage, you just need to add the js file and call `run()`, passin
 To avoid conflicts with namespaces of other libraries you could using, the code is wrapped in a class and then auto-instance an object called `jsdialog`. Thats why you must call `jsdialog.run()` instead of just `run()`.
 
 NOTE: Your own js script must be placed at the end of `body`, or in `head` wrapping everything in a [`window.onload`](https://developer.mozilla.org/es/docs/Web/API/GlobalEventHandlers/onload) event ([here](https://stackoverflow.com/questions/21761954/load-external-javascript-file-after-onload) is an example of how load `jsdialogs` code after `window.onload` event), but for practiceness, placing it at the end of `body` is recomended. The scritp tag that load `jsdialogs` code must always be placing before your own js code.
+
+#### Exportable version (`jsdialogs_module.js` and `jsdialogs_module.min.js`)
+
+If your code works with javascript modules you just need to import it in your own js file as follows:
+
+```javascript
+"use strict";
+
+import * as jsdialog from "/path_to_folder/jsdialogs_module.min.js";
+
+```
+
+From that, everything is the same as the standar version of `jsdialogs`.
 
 ---
 
@@ -51,9 +66,9 @@ event_trigger.onclick = function(){
 
 These attributes can be changed wherever you want.
 ```javascript
-jsdialog.accept_button_label = 'Aceptar';
-jsdialog.cancel_button_label = 'Cancelar';
-jsdialgo.delay_time_to_clean = 150; //0.15s
+jsdialog.set_accept_button_label('Aceptar');
+jsdialog.set_cancel_button_label('Cancelar');
+jsdialgo.set_delay_time_to_clean(150); //0.15s
 ```
 ---
 
