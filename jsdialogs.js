@@ -70,6 +70,25 @@ class JSDialogHandler {
     this.delay_time_to_clean = 0;
   }
 
+
+/*############################################################################*/
+
+  set_accept_button_label(label_text){
+    this.accept_button_label = label_text;
+  }
+
+/*############################################################################*/
+
+  set_cancel_button_label(label_text){
+    this.cancel_button_label = label_text;
+  }
+
+/*############################################################################*/
+
+  set_delay_time_to_clean(delay_time){
+    this.delay_time_to_clean = delay_time;
+  }
+
 /*############################################################################*/
 
   hide(){
