@@ -12,7 +12,7 @@ In the simplest usage, you just need to add the js file and call `run()`, passin
   trigger.onclick = function(){
     jsdialog.run({dialog_content: 'this dialog was triggered', is_confirmation_dialog: true}, 
       function(){
-        alert("And now you accept the dialog");
+        alert("you have accepted the dialog");
       })
   }
 </script>
@@ -20,7 +20,7 @@ In the simplest usage, you just need to add the js file and call `run()`, passin
 
 To avoid conflicts with namespaces of other libraries you could using, the code is wrapped in a class and then auto-instance an object called `jsdialog`. Thats why you must call `jsdialog.run()` instead of just `run()`.
 
-NOTE: `<script src="jsdialogs.min.js" charset="utf-8"></script>` can be placed in `head` or in `body`. Your own JS script must be placed at the end of `body` or in the `head` wrapping everything in a [`window.onload`](https://developer.mozilla.org/es/docs/Web/API/GlobalEventHandlers/onload) event, but for practiceness, placing it at the end of `body` is recomended.
+NOTE: Your own js script must be placed at the end of `body`, or in `head` wrapping everything in a [`window.onload`](https://developer.mozilla.org/es/docs/Web/API/GlobalEventHandlers/onload) event, but for practiceness, placing it at the end of `body` is recomended. The scritp tag that load `jsdialogs` code must always be placing before your own js code.
 
 ---
 
