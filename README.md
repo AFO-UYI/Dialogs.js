@@ -6,7 +6,7 @@ A minimal way to add modal dialogs on your web page with vanilla Javascript.
 In the simplest usage, you just need to add the js file and call `run()`, passing a message or html in text format or a Node Object, if is to ask for confirmation or just a fancy alert, and a callback for the accept case.
 
 ```html
-<script src="dialogs.js" charset="utf-8"></script>
+<script src="jsdialogs.js" charset="utf-8"></script>
 <script type="text/javascript">
   let trigger = document.getElementById('something');
   trigger.onclick = function(){
