@@ -43,8 +43,8 @@ event_trigger.onclick = function(){
 ## Customization
 
 `JSDialog` has 3 attributes:
-- **accept_button_label**: default value is `'Accept'`. Will change the text of accept button.
-- **cancel_button_label**:  default value is `'Cancel'`. Will change the text of cancel button.
+- **accept_button_label**: default value is `'Accept'`. Will change the accept button text.
+- **cancel_button_label**:  default value is `'Cancel'`. Will change the accept button text.
 - **delay_time_to_clean**: default value is `0`. After clicking accept or cancel button, the dialog is cleaned. If you made an animation for hide/show the dialog, will be visible that the dialog turns empty. To avoid that you can set in ms the delay for cleaning the dialog.
 
 These attributes can be changed wherever you want.
