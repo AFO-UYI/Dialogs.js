@@ -20,6 +20,8 @@ In the simplest usage, you just need to add the js file and call `run()`, passin
 
 To avoid conflicts with namespaces of other libraries you could using, the code is wrapped in a class and then auto-instance an object called `jsdialog`. Thats why you must call `jsdialog.run()` instead of just `run()`.
 
+NOTE: `<script src="jsdialogs.min.js" charset="utf-8"></script>` can be placed in `head` or in `body`. Your own JS script must be placed at the end of `body` or in the `head` wrapping everything in a [`window.onload`](https://developer.mozilla.org/es/docs/Web/API/GlobalEventHandlers/onload) event, but for practiceness, placing it at the end of `body` is recomended.
+
 ---
 
 #### `jsdialog.run({dialog_content, is_confirmation_dialog} [, callback])`
