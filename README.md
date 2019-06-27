@@ -53,13 +53,14 @@ jsdialog.accept_button_label = 'Aceptar';
 jsdialog.cancel_button_label = 'Cancelar';
 jsdialgo.delay_time_to_clean = 150; //0.15s
 ```
+---
 
 `JSDialog` has 6 CSS #ids:
-- **`#jsdialog_box`** : the box is a, by default, no visible div, with `position: absolute` and a size of the whole viewport. Used for centering the dialog. If you want darken the background or make a transition for the show/hide, this is the proper id.
+- **`#jsdialog_box`** : the box is, by default, a no visible div, with `position: absolute` and a size of the whole viewport. Used for centering the dialog. If you want darken the background or make a transition for the show/hide, this is the proper id.
 - **`#jsdialog_panel`** : the panel is the visible centered div where the content and buttons are holded.
-- **`#jsdialog_content_box`** : the content holder div, if you use just text as content. Otherwise, could be better ignore it and use your own css of the html you created as content.
+- **`#jsdialog_content_box`** : the content holder div, if you use just text as content. Otherwise, could be better ignore it and use your own css for the html you created as content.
 - **`#jsdialog_buttons_box`** : for the buttons holder div.
 - **`#jsdialog_accept_button`** : for the accept button only.
 - **`#jsdialog_cancel_button`** : for the cancel button only.
 
-`jsdialog_box` and `jsdialog_panel` have a basic predefined css. Just for make floating and centering the dialog. This predefined CSS can be found as `style` tag in the html `head`.
+`jsdialog_box` and `jsdialog_panel` have a basic predefined css, just for make floating and centering the dialog. This predefined CSS can be found as `style` tag in the html `head`.
