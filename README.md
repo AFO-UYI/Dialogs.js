@@ -35,7 +35,7 @@ import * as jsdialog from "/path_to_folder/jsdialogs_module.min.js";
 
 ```
 
-From that, everything is the same as the standar version of `jsdialogs`.
+From that point forward, everything is the same as the standar version of `jsdialogs`.
 
 ---
 
